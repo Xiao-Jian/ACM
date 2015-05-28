@@ -24,7 +24,6 @@ int main()
 			if(y[j][0]=='#')break;
 		}
 		m=i-1; n=j-1;
-		//cout <<m<<" "<<n<<endl;
         for(i=0;i<=m;i++)
             c[i][0]=0;
         for(i=1;i<=n;i++)
