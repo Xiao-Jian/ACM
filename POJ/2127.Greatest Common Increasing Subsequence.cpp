@@ -18,7 +18,7 @@ int main()
 		memset(c,0,sizeof(c));
 		memset(d,-1,sizeof(d));
 		for(i=0;i<m;i++) {
-			for(j=1;j<n;j++) {
+			for(j=0;j<n;j++) {
 				if(a[i]!=b[j])
 					c[i][j]=c[i][j-1];
 				else {
@@ -46,18 +46,19 @@ int main()
 					x=i;y=j;
 				}
 		printf("%d\n",l);
-
+		
 		ma[0]=a[x];
-		for(i=1;i<l;i++) {
+		for(i=1;i<l;) {
 			if(d[x][y]>=0) {
-				ma[i]=a[d[x][y]];
+				ma[i++]=a[d[x][y]];
 				x=d[x][y];
 			}
 			y--;
 		}
 		for(i=l-1;i>0;i--)
 			printf("%d ",ma[i]);
-		printf("%d\n",ma[0]);
+		if(l!=0)
+			printf("%d\n",ma[0]);
 	}
 	return 0;
 }
