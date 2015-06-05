@@ -1,3 +1,10 @@
+/*
+OJ: POJ
+ID: 3013216109
+TASK: 2127.Greatest Common Increasing Subsequence
+LANG: C++
+NOTE: DP
+*/
 #include <cstdio>
 #include <cstring>
 
@@ -46,7 +53,7 @@ int main()
 					x=i;y=j;
 				}
 		printf("%d\n",l);
-		
+
 		ma[0]=a[x];
 		for(i=1;i<l;) {
 			if(d[x][y]>=0) {

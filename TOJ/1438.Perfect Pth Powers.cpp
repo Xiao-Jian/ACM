@@ -1,3 +1,10 @@
+/*
+OJ: TOJ
+ID: 3013216109
+TASK: 1438.Perfect Pth Powers
+LANG: C++
+NOTE: ´ò±í
+*/
 #include <cstdio>
 
 int a[65537][33];

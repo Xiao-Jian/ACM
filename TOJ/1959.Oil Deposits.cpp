@@ -1,3 +1,10 @@
+/*
+OJ: TOJ
+ID: 3013216109
+TASK: 1959.Oil Deposits
+LANG: C++
+NOTE: DFS
+*/
 #include <cstdio>
 
 char oil[105][105];
