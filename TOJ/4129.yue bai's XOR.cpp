@@ -42,9 +42,9 @@ int main()
 	scanf("%d",&n);
     memset(f,-1,sizeof(f));
     cnt=0;
-    scanf("%lld",&t);
+    scanf("%I64d",&t);
     ans=t;
-    printf("%lld\n",ans);
+    printf("%I64d\n",ans);
     n--;
     while(n--) {
         scanf("%d",&t);
@@ -52,7 +52,7 @@ int main()
             ans=t;
         insert(t,0,63);
         query(t,0,63);
-        printf("%lld\n",ans);
+        printf("%I64d\n",ans);
     }
 	return 0;
 }

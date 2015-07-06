@@ -49,4 +49,5 @@ int main()
         MergeSort(a,tmp,0,n-1);
         printf("%lld\n",sum);
     }
+    return 0;
 }
